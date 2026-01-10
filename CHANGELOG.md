@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.h
 
 ## [Unreleased]
 
+## [2.5.5] - 2026-01-10
+### Added
+- PHP syntax checking workflow with parallel-lint (8.0-8.5)
+- Syntax check badges in README
+
 ## [2.5.4] - 2026-01-10
 ### Changed
 - Switch to shields.io badges with PHP version labels
