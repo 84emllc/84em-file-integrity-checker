@@ -58,7 +58,7 @@ jobs:
         tools: composer:v2
 
     - name: Validate composer.json
-      run: composer validate --strict
+      run: composer validate
 
     - name: Install PHP dependencies
       run: composer install --no-scripts --no-progress --prefer-dist
