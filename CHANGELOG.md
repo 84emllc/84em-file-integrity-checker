@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.h
 
 ## [Unreleased]
 
+## [2.5.6] - 2026-01-10
+### Added
+- Security review GitHub Actions workflow with Claude Security Review and dependency audit
+- Security Review badge in README
+
+### Removed
+- Redundant syntax workflow (CI already catches syntax errors)
+
 ## [2.5.5] - 2026-01-10
 ### Added
 - PHP syntax checking workflow with parallel-lint (8.0-8.5)
