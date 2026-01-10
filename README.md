@@ -1,5 +1,7 @@
 # 84EM File Integrity Checker
 
+[![CI](https://github.com/84emllc/84em-file-integrity-checker/actions/workflows/ci.yml/badge.svg)](https://github.com/84emllc/84em-file-integrity-checker/actions/workflows/ci.yml)
+
 A modern WordPress plugin for monitoring file integrity across your WordPress installation. Detect unauthorized changes, track file modifications, and maintain security compliance with automated scanning and comprehensive reporting.
 
 ## ⚠️ Important: What This Plugin Is (And Isn't)

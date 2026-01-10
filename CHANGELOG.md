@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.h
 
 ## [Unreleased]
 
+## [2.5.3] - 2026-01-10
+### Added
+- GitHub Actions CI workflow for automated testing on PHP 8.0, 8.1, 8.2, and 8.3
+- CI status badge in README
+
 ## [2.5.2] - 2025-12-05
 ### Changed
 - Removed "Run New Scan" button from admin notices (WordPress update and plugin change notices)
