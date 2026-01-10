@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.h
 
 ## [Unreleased]
 
+## [2.5.4] - 2026-01-10
+### Changed
+- Switch to shields.io badges with PHP version labels
+- Expand CI testing to PHP 8.0, 8.1, 8.2, 8.3, 8.4, and 8.5
+
 ## [2.5.3] - 2026-01-10
 ### Added
 - GitHub Actions CI workflow for automated testing on PHP 8.0, 8.1, 8.2, and 8.3

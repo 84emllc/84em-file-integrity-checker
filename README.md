@@ -1,7 +1,6 @@
 # 84EM File Integrity Checker
 
 ![Tested On](https://img.shields.io/badge/tested%20on-555)
-[![PHP 7.4](https://img.shields.io/github/actions/workflow/status/84emllc/84em-file-integrity-checker/ci.yml?branch=main&label=PHP%207.4)](https://github.com/84emllc/84em-file-integrity-checker/actions/workflows/ci.yml)
 [![PHP 8.0](https://img.shields.io/github/actions/workflow/status/84emllc/84em-file-integrity-checker/ci.yml?branch=main&label=PHP%208.0)](https://github.com/84emllc/84em-file-integrity-checker/actions/workflows/ci.yml)
 [![PHP 8.1](https://img.shields.io/github/actions/workflow/status/84emllc/84em-file-integrity-checker/ci.yml?branch=main&label=PHP%208.1)](https://github.com/84emllc/84em-file-integrity-checker/actions/workflows/ci.yml)
 [![PHP 8.2](https://img.shields.io/github/actions/workflow/status/84emllc/84em-file-integrity-checker/ci.yml?branch=main&label=PHP%208.2)](https://github.com/84emllc/84em-file-integrity-checker/actions/workflows/ci.yml)
