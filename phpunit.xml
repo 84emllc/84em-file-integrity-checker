@@ -13,7 +13,6 @@
     <testsuites>
         <testsuite name="Unit Tests">
             <directory>tests/Unit</directory>
-            <exclude>tests/Unit/Admin/PluginLinksTest.php</exclude>
         </testsuite>
         <testsuite name="Integration Tests">
             <directory>tests/Integration</directory>
