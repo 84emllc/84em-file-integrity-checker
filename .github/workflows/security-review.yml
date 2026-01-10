@@ -1,0 +1,72 @@
+name: Security Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '**.php'
+      - '**.js'
+      - '**.ts'
+      - '**.jsx'
+      - '**.tsx'
+      - '**.yml'
+      - '**.yaml'
+      - '**.sh'
+      - 'composer.json'
+      - 'package.json'
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+jobs:
+  security-review:
+    name: Claude Security Review
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ github.event.pull_request.head.sha || github.sha }}
+        fetch-depth: 2
+
+    - name: Run Claude Security Review
+      uses: anthropics/claude-code-security-review@main
+      with:
+        claude-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
+        comment-pr: true
+        upload-results: true
+        exclude-directories: 'vendor,node_modules,build,dist,tests'
+        claudecode-timeout: 20
+        run-every-commit: false
+
+  # Run dependency security checks
+  dependency-check:
+    name: Dependency Security Check
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        tools: composer:v2
+
+    - name: Validate composer.json
+      run: composer validate --strict
+
+    - name: Install PHP dependencies
+      run: composer install --no-scripts --no-progress --prefer-dist
+
+    - name: Check PHP dependencies for vulnerabilities
+      run: |
+        echo "Checking PHP dependencies for known vulnerabilities..."
+        composer audit || {
+          echo "Vulnerabilities found in dependencies. Please review and update."
+          exit 0  # Don't fail the workflow, just warn
+        }
