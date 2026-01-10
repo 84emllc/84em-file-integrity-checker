@@ -8,6 +8,8 @@
 [![PHP 8.4](https://img.shields.io/github/actions/workflow/status/84emllc/84em-file-integrity-checker/ci.yml?branch=main&label=PHP%208.4)](https://github.com/84emllc/84em-file-integrity-checker/actions/workflows/ci.yml)
 [![PHP 8.5](https://img.shields.io/github/actions/workflow/status/84emllc/84em-file-integrity-checker/ci.yml?branch=main&label=PHP%208.5)](https://github.com/84emllc/84em-file-integrity-checker/actions/workflows/ci.yml)
 
+[![Security Review](https://img.shields.io/github/actions/workflow/status/84emllc/84em-file-integrity-checker/security-review.yml?branch=main&label=Security%20Review)](https://github.com/84emllc/84em-file-integrity-checker/actions/workflows/security-review.yml)
+
 A modern WordPress plugin for monitoring file integrity across your WordPress installation. Detect unauthorized changes, track file modifications, and maintain security compliance with automated scanning and comprehensive reporting.
 
 ## ⚠️ Important: What This Plugin Is (And Isn't)
